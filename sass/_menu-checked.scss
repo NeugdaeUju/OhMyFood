@@ -6,7 +6,7 @@
     transition : transform 300ms ease;
   }
   
-  .card_check {
+  .card__check {
     position : absolute;
     right : 0px;
     width : 50px;
@@ -31,7 +31,7 @@
   }
   
   input[type="checkbox"]:checked {
-    ~ .card_check {
+    ~ .card__check {
       transform: translateX(0);
       opacity : 1;
     }
@@ -60,7 +60,7 @@
   
   @media (min-width : 800px) {
     
-    .card_check {
+    .card__check {
       position : absolute;
       right : 0px;
       width : 70px;
@@ -88,7 +88,7 @@
     }
     
     input[type="checkbox"]:checked {
-      ~ .card_check {
+      ~ .card__check {
         transform: translateX(0);
         opacity : 1;
       }
