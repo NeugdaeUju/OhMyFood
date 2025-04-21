@@ -403,4 +403,14 @@ input:checked + .restaurant__like__heart .restaurant__like__heart__shape {
   .footer__box__picto {
     margin-right: 5px;
   }
+}
+/***** Devices : Desktop *****/
+@media (min-width: 800px) {
+  /***** Header *****/
+  .header {
+    padding: 30px 0;
+  }
+  .header__logo {
+    height: 34px;
+  }
 }/*# sourceMappingURL=index.css.map */
