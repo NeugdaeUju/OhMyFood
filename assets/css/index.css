@@ -41,4 +41,27 @@ a {
 .header__logo {
   height: 36px;
   width: 100%;
+}
+
+/***** Location *****/
+.location {
+  background-color: #EAEAEA;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 15.5px 0;
+  margin-top: 4px;
+}
+.location__picto {
+  height: 16px;
+  width: 12px;
+  padding-right: 15px;
+}
+.location__text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  color: #353535;
 }/*# sourceMappingURL=index.css.map */
