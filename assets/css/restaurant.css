@@ -1,3 +1,29 @@
 /***** Variables *****/
 /***** Colors *****/
-/***** Fonts *****//*# sourceMappingURL=restaurant.css.map */
+/***** Fonts *****/
+/***** General *****/
+* {
+  margin: 0;
+  font-family: Roboto;
+}
+
+body {
+  background-color: #F6F6F6;
+}
+
+.section_title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}/*# sourceMappingURL=restaurant.css.map */
