@@ -408,7 +408,7 @@ input:checked + .restaurant__like__heart .restaurant__like__heart__shape {
   }
 }
 /***** Devices : Desktop *****/
-@media (min-width: 800px) {
+@media (min-width: 1020px) {
   .section__title {
     margin-left: 0;
   }
