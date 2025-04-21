@@ -102,4 +102,53 @@ a {
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   margin-bottom: 15px;
+}
+
+/***** Functioning *****/
+.function {
+  background-color: #FFF;
+  padding: 48px 25px 68px 25px;
+}
+.function__cards--direction {
+  margin-bottom: 24px;
+}
+.function__card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  position: relative;
+}
+.function__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 72px;
+  width: 95%;
+  border-radius: 25px;
+  background-color: #F6F6F6;
+  padding-left: 35px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+.function__picto {
+  height: 20px;
+  width: 13px;
+  padding-right: 20px;
+}
+.function__nmb {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: #FFF;
+  background-color: #9356DC;
+  border-radius: 25px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -10px;
 }/*# sourceMappingURL=index.css.map */

@@ -140,3 +140,59 @@
     }
   
   }
+
+/***** Functioning *****/
+.function {
+    background-color: $white;
+    padding : 48px 25px 68px 25px;
+  
+    &__cards--direction {
+      margin-bottom : 24px;
+    }
+  
+    &__card {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top : 25px;
+      position : relative;
+    }
+  
+    &__content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height : 72px;
+      width: 95%;
+      border-radius: 25px;
+      background-color: $background-color;
+      padding-left : 35px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    
+    }
+  
+    &__picto {
+      height : 20px;
+      width: 13px;
+      padding-right: 20px;
+    }
+    
+    &__nmb {
+      display : flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size : 14.5px;
+      font-weight: 500;
+      color : $white;
+      background-color: $primary;
+      border-radius : 25px;
+      width : 24px;
+      height : 24px;
+      position : absolute;
+      left : -10px;
+    
+    }
+  }
