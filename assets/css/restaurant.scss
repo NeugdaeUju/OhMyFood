@@ -196,3 +196,25 @@
       }
     }
   }
+
+  /***** Order Button *****/
+.order{
+    display : flex;
+    flex-direction :row;
+    align-items: center;
+    justify-content: center;
+    margin : 0 0 40px 0;
+  
+    &__button {
+      font-size: $text-font-size;
+      font-style: $text-font-style;
+      font-weight: $text-font-weight;
+      color : $white;
+      text-align : center;
+      padding : 15.5px 23px;
+      border : none;
+      border-radius: 25px;
+      background: linear-gradient($pink, $primary);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    }
+  }

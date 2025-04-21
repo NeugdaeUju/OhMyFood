@@ -151,4 +151,25 @@ a {
 }
 .card__content__price {
   font-weight: 700;
+}
+
+/***** Order Button *****/
+.order {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 40px 0;
+}
+.order__button {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  color: #FFF;
+  text-align: center;
+  padding: 15.5px 23px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }/*# sourceMappingURL=restaurant.css.map */
