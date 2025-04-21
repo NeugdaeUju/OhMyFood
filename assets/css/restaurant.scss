@@ -272,4 +272,19 @@
         width: 100%;
       }
     }
+
+    /*Menu*/
+   .menu {
+    top : -40px;
+    width: 70%;
+    padding : 0 50px;
+
+    &__header {
+      justify-content: center;
+    }
+
+    &__title {
+      padding-right : 30px;
+    }
+   }
   }
