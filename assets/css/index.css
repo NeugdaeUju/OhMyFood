@@ -361,4 +361,20 @@ input:checked + .restaurant__like__heart .restaurant__like__heart__shape {
 .footer__box__link__picto {
   margin-right: 10px;
   height: 13px;
+}
+
+/***** Responsive *****/
+/***** Devices : Tablet *****/
+@media (min-width: 800px) {
+  /***** Restaurants *****/
+  /***** Restaurants *****/
+  .restaurant__cards--direction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .restaurant__cards--direction__link {
+    width: 49%;
+  }
 }/*# sourceMappingURL=index.css.map */

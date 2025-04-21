@@ -310,3 +310,22 @@
       
     }
   }
+
+/***** Responsive *****/
+
+  /***** Devices : Tablet *****/
+  @media (min-width : 800px) {
+    /***** Restaurants *****/
+    /***** Restaurants *****/
+    .restaurant__cards--direction {
+      display : flex;
+      flex-direction : row;
+      align-items: center;
+      justify-content: space-between;
+
+      &__link {
+        width : 49%;
+      }
+    }
+
+  }
