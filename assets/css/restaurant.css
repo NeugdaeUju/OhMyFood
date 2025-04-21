@@ -230,4 +230,30 @@ a {
   .menu__title {
     padding-right: 30px;
   }
+  /***** Footer *****/
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .footer__logo {
+    height: 27px;
+  }
+  .footer__box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 50px;
+  }
+  .footer__box--tablet-desktop {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer__box__link {
+    padding: 0 10px;
+  }
+  .footer__box__picto {
+    margin-right: 5px;
+  }
 }/*# sourceMappingURL=restaurant.css.map */
