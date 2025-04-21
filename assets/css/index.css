@@ -366,7 +366,10 @@ input:checked + .restaurant__like__heart .restaurant__like__heart__shape {
 /***** Responsive *****/
 /***** Devices : Tablet *****/
 @media (min-width: 800px) {
-  /***** Restaurants *****/
+  .section__title {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
   /***** Restaurants *****/
   .restaurant__cards--direction {
     display: flex;
