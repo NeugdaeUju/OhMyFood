@@ -94,6 +94,14 @@ a {
   border-bottom: 3px solid #99E2D0;
 }
 
+.plats__title {
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 8px;
+  width: 40px;
+  border-bottom: 3px solid #99E2D0;
+}
+
 /***** Menu : Cards *****/
 .card {
   background-color: #FFF;
