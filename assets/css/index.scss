@@ -368,6 +368,10 @@
 
   /***** Devices : Desktop *****/
   @media (min-width : 800px) {
+.section__title {
+  margin-left : 0;
+}
+
     /***** Header *****/
   .header {
     padding : 30px 0;
@@ -420,3 +424,24 @@
   }
   
   }
+
+/***** Devices : Large screen *****/
+@media (min-width : 1440px) {
+  /***** Functionning *****/
+  .function {
+    padding : 30px 180px;
+  }
+
+  /***** Restaurants *****/
+  .restaurants {
+    padding : 30px 180px;
+  }
+
+  .restaurant__cards--direction {
+    margin-bottom: 50px;
+
+    &__link {
+      width : 45%;
+    }
+  }
+}
