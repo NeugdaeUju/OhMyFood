@@ -1,0 +1,107 @@
+/* Réaliser un Media query pour les élements mobile et utiliser l'animation présente pour le media query de 800px*/
+.card {
+    position : relative;
+    z-index : 2;
+    overflow : hidden;
+    transition : transform 300ms ease;
+  }
+  
+  .card_check {
+    position : absolute;
+    right : 0px;
+    width : 50px;
+      height : 70px;
+      background-color : #99E2D0;
+      display : flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-top-right-radius : 15px;
+      border-bottom-right-radius : 15px;
+    transform : translateX(100%);
+    opacity : 0;
+    transition : all 600ms ease;
+    z-index : 3;
+  }
+  
+  .card__content__price {
+    z-index : 2;
+    right : 20px;
+    bottom : 20px;
+  }
+  
+  input[type="checkbox"]:checked {
+    ~ .card_check {
+      transform: translateX(0);
+      opacity : 1;
+    }
+  
+    ~ .card__name {
+      animation : reduction 600ms both;
+  }
+  }
+  
+  input[type="checkbox"]:not(:checked) {
+    ~ .card__name {
+      animation : inverse 600ms both;
+    }
+  }
+  
+  @keyframes reduction {
+    0% {width: 100%;}
+    100% {width : 75%}
+  }
+  
+  @keyframes inverse {
+    0% {width: 75%;}
+    100% {width : 100%}
+  }
+  
+  
+  @media (min-width : 800px) {
+    
+    .card_check {
+      position : absolute;
+      right : 0px;
+      width : 70px;
+        height : 70px;
+        background-color : #99E2D0;
+        display : flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-top-right-radius : 15px;
+        border-bottom-right-radius : 15px;
+      transform : translateX(100%);
+      opacity : 0;
+      transition : all 300ms ease;
+      z-index : 3;
+    }
+    
+    .card__content__price {
+      transform : translateX(0);
+      transition : transform 300ms ease;
+      z-index : 2;
+      position : absolute;
+      right : 20px;
+      bottom : 20px;
+    }
+    
+    input[type="checkbox"]:checked {
+      ~ .card_check {
+        transform: translateX(0);
+        opacity : 1;
+      }
+    
+      ~ .card__name {
+        .card__content {
+          .card__content__price {
+            transform: translateX(-70px);
+          }
+        }
+      }
+    }
+  }
+  
+  
+  
