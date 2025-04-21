@@ -43,4 +43,16 @@ a {
 }
 .header__link {
   margin-left: 17px;
+}
+
+/***** Hero *****/
+.hero {
+  position: relative;
+}
+.hero__image {
+  height: 275px;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=restaurant.css.map */

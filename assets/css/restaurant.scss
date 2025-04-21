@@ -75,3 +75,15 @@
             margin-left : 17px;
         }
 }
+
+/***** Hero *****/
+.hero {
+    position : relative;
+  
+      &__image {
+        height : 275px;
+        width: 100%;
+        display : block;
+        object-fit: cover;
+      }
+  }
