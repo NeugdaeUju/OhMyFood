@@ -321,3 +321,21 @@
     }
   }
   }
+
+/***** Devices : Large screen *****/
+@media (min-width : 1440px) {
+    /*Menu*/
+  .menu {
+    padding-top : 50px;
+    margin : 0 190px;
+
+    &__header {
+      padding-bottom : 40px;
+    }
+  }
+
+  .order__button {
+    width : 186px;
+    height: 50px;
+  }
+}
