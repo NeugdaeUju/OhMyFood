@@ -345,6 +345,11 @@
       justify-content: space-between;
       padding-right : 50px;
 
+      &--tablet-desktop {
+        display: flex;
+        flex-direction: row;
+      }
+
       &__link {
         padding : 0 10px;
 
