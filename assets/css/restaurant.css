@@ -77,4 +77,62 @@ a {
   font-family: Shrikhand;
   font-size: 28px;
   font-weight: 400;
+}
+
+/***** Menu : Sections *****/
+.menu__card {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 17px 40px 17px;
+}
+
+.entree__title {
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 8px;
+  width: 40px;
+  border-bottom: 3px solid #99E2D0;
+}
+
+/***** Menu : Cards *****/
+.card {
+  background-color: #FFF;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  height: 70px;
+  cursor: pointer;
+}
+.card__name {
+  padding: 12px 15px 0 15px;
+  width: 100%;
+}
+.card__title {
+  font-size: 18px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.card__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0px 12px 0px;
+}
+.card__content__text {
+  font-size: 15px;
+  font-weight: 300;
+  width: 80%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.card__content__price {
+  font-weight: 700;
 }/*# sourceMappingURL=restaurant.css.map */

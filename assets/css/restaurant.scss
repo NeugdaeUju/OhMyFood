@@ -110,4 +110,69 @@
       font-weight : 400;
     }
   }
+
+  /***** Menu : Sections *****/
+.menu__card {
+    display : flex;
+    flex-direction : column;
+    padding : 0px 17px 40px 17px;
+  }
   
+  .entree {
+    &__title {
+      font-size : 16px;
+      font-weight : 300;
+      padding-bottom : 8px;
+      width: 40px;
+      border-bottom : 3px solid #99E2D0;
+    }
+  }
+  
+  /***** Menu : Cards *****/
+  .card {
+    background-color: $white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+    border-radius : 15px;
+    margin-top : 12px;
+    display : flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    height : 70px;
+    cursor: pointer;
+  
+    &__name {
+      padding : 12px 15px 0 15px;
+      width: 100%;
+    }
+  
+    &__title {
+      font-size : 18px;
+      font-weight : 700;
+      text-overflow: ellipsis;
+        white-space : nowrap;
+        overflow : hidden;
+  
+    }
+  
+    &__content {
+      display : flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding : 5px 0px 12px 0px;
+  
+      &__text {
+        font-size : 15px;
+        font-weight: 300;
+        width: 80%;
+        text-overflow: ellipsis;
+        white-space : nowrap;
+        overflow : hidden;
+      }
+  
+      &__price {
+        font-weight: 700;
+      }
+    }
+  }
