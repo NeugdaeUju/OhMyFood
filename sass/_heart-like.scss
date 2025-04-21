@@ -1,0 +1,31 @@
+.restaurant__like {
+    &__wrapper {
+        cursor : pointer;
+        display : inline-block;
+    }
+
+    &__heart {
+        width : 29px;
+        height : 80px;
+
+        &__shape {
+            fill: white;
+            transition : all 600ms ease;
+          }
+    }
+
+    input:checked + &__heart .restaurant__like__heart__shape {
+        fill : url(#heartGradient);
+        stroke : url(#heartGradient);
+        animation : heartcolor 1s backwards;
+      }
+}
+
+@keyframes heartcolor {
+  0% {
+    opacity : 0%;
+  }
+  100% {
+    opacity : 100%;
+  }
+}

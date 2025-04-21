@@ -29,6 +29,42 @@ a {
   text-decoration: none;
 }
 
+/***** Animations *****/
+.hero__btn {
+  transition: all 600ms;
+  cursor: pointer;
+}
+.hero__btn:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+.restaurant__like__wrapper {
+  cursor: pointer;
+  display: inline-block;
+}
+.restaurant__like__heart {
+  width: 29px;
+  height: 80px;
+}
+.restaurant__like__heart__shape {
+  fill: white;
+  transition: all 600ms ease;
+}
+input:checked + .restaurant__like__heart .restaurant__like__heart__shape {
+  fill: url(#heartGradient);
+  stroke: url(#heartGradient);
+  animation: heartcolor 1s backwards;
+}
+
+@keyframes heartcolor {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 /***** Header *****/
 .header {
   display: flex;
