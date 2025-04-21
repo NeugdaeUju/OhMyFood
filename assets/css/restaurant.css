@@ -172,4 +172,29 @@ a {
   border-radius: 25px;
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/***** Footer *****/
+.footer {
+  background-color: #353535;
+  padding: 22px 25px;
+}
+.footer__logo {
+  height: 27px;
+  margin-bottom: 16px;
+}
+.footer__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__box__link {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 7px;
+}
+.footer__box__link__picto {
+  margin-right: 10px;
+  height: 13px;
 }/*# sourceMappingURL=restaurant.css.map */

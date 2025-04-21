@@ -218,3 +218,33 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     }
   }
+
+/***** Footer *****/
+.footer {
+    background-color: $gray;
+    padding : 22px 25px;
+  
+    &__logo {
+      height : 27px;
+      margin-bottom: 16px;
+    }
+    
+    &__box {
+      display : flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+      &__link {
+        color : $white;
+        font-size: 15px;
+        font-weight: $text-font-weight;
+        padding-bottom : 7px;
+
+        &__picto {
+            margin-right : 10px;
+            height : 13px;
+          }
+      }
+      
+    }
+  }
