@@ -188,6 +188,15 @@ input[type=checkbox]:not(:checked) ~ .card__name {
     transform: translateX(-70px);
   }
 }
+.order__button {
+  transition: all 600ms;
+  cursor: pointer;
+}
+.order__button:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+}
+
 /***** Header *****/
 .header {
   display: flex;

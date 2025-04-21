@@ -1,0 +1,10 @@
+.order {
+    &__button{
+        transition : all 600ms;
+        cursor: pointer;
+    &:hover{
+        filter : brightness(1.10);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+    }
+    }
+}
