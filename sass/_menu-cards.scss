@@ -1,0 +1,71 @@
+/***** Entrees *****/
+.card {
+    &_1 {
+        animation : card_Apparition both ease-in-out ;
+        animation-duration : 2s;
+        animation-delay : 100ms;
+    }
+    &_reverse_2 {
+        animation : card_Apparition both ease-in-out;
+        animation-delay : 600ms;
+        animation-duration : 2s;
+    }
+    &_3 {
+        animation : card_Apparition both ease-in-out;
+        animation-delay : 1200ms;
+        animation-duration : 2s;
+    }
+
+    &_reverse_4{
+        animation : card_Apparition both ease-in-out;
+        animation-delay : 1800ms;
+        animation-duration : 2s;
+    }
+}
+
+/***** Plats *****/
+.card {
+    &_4 {
+        animation : card_Apparition both ease-in-out;
+        animation-delay : 2100ms;
+        animation-duration : 2s;
+    }
+    &_reverse_5 {
+        animation : card_Apparition both ease-in-out;
+        animation-delay : 2600ms;
+        animation-duration : 2s;
+    }
+    &_6 {
+        animation : card_Apparition both ease-in-out;
+        animation-delay : 3200ms;
+        animation-duration : 2s;
+    }
+}
+
+/***** Dessert *****/
+.card {
+    &_7 {
+        animation : card_Apparition both ease-in-out;
+        animation-delay : 4100ms;
+        animation-duration : 2s;    
+    }
+    &_reverse_8 {
+        animation : card_Apparition both ease-in-out;
+        animation-delay : 4600ms;
+        animation-duration : 2s;
+    }
+    &_9 {
+        animation : card_Apparition both ease-in-out;
+        animation-delay : 5200ms;
+        animation-duration : 2s;
+    }
+}
+
+@keyframes card_Apparition {
+    0% {
+        opacity : 0%;
+    }
+    100% {
+        opacity : 100%;
+    }
+}

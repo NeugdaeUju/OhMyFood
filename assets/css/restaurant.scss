@@ -57,6 +57,9 @@
     text-decoration : none;
   }
 
+  /***** Animations *****/
+  @import '../../sass/menu-cards';
+
 /***** Header *****/
 .header {
     display : flex;
