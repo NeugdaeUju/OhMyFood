@@ -386,6 +386,9 @@ input:checked + .restaurant__like__heart .restaurant__like__heart__shape {
     flex-direction: row-reverse;
     align-items: center;
   }
+  .footer__logo {
+    height: 27px;
+  }
   .footer__box {
     display: flex;
     flex-direction: row;
@@ -441,5 +444,9 @@ input:checked + .restaurant__like__heart .restaurant__like__heart__shape {
   }
   .restaurant__cards--direction__link {
     width: 47%;
+  }
+  /***** Footer *****/
+  .footer {
+    padding-top: 64px;
   }
 }/*# sourceMappingURL=index.css.map */

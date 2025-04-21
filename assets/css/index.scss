@@ -338,6 +338,10 @@
     flex-direction: row-reverse;
     align-items: center;
 
+    &__logo {
+      height : 27px;
+    }
+
     &__box {
       display : flex;
       flex-direction :row;
@@ -408,6 +412,11 @@
     &__link {
       width : 47%
   }
+  }
+
+  /***** Footer *****/
+  .footer {
+    padding-top: 64px;
   }
   
   }
