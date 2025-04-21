@@ -432,4 +432,14 @@ input:checked + .restaurant__like__heart .restaurant__like__heart__shape {
   .function__card {
     margin: 0 18px;
   }
+  /***** Restaurants *****/
+  .restaurants {
+    padding: 30px 50px;
+  }
+  .restaurant__cards--direction {
+    margin-bottom: 30px;
+  }
+  .restaurant__cards--direction__link {
+    width: 47%;
+  }
 }/*# sourceMappingURL=index.css.map */

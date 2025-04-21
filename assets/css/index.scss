@@ -395,6 +395,19 @@
     margin : 0 18px;
   }
   
-}
+  }
 
+  /***** Restaurants *****/
+  .restaurants {
+    padding : 30px 50px;
+  }
+
+  .restaurant__cards--direction {
+    margin-bottom : 30px;
+
+    &__link {
+      width : 47%
+  }
+  }
+  
   }
