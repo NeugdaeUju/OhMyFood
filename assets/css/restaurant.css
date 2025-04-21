@@ -83,7 +83,7 @@ a {
 .menu__card {
   display: flex;
   flex-direction: column;
-  padding: 0px 17px 40px 17px;
+  padding: 0px 13px 40px 13px;
 }
 
 .entree__title {
