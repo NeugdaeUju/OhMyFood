@@ -377,4 +377,23 @@ input:checked + .restaurant__like__heart .restaurant__like__heart__shape {
   .restaurant__cards--direction__link {
     width: 49%;
   }
+  /***** Footer *****/
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .footer__box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 50px;
+  }
+  .footer__box__link {
+    padding: 0 10px;
+  }
+  .footer__box__picto {
+    margin-right: 5px;
+  }
 }/*# sourceMappingURL=index.css.map */

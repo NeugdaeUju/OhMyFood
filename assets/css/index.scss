@@ -328,4 +328,27 @@
       }
     }
 
+    /***** Footer *****/
+  .footer {
+    display : flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    &__box {
+      display : flex;
+      flex-direction :row;
+      align-items: center;
+      justify-content: space-between;
+      padding-right : 50px;
+
+      &__link {
+        padding : 0 10px;
+
+      }
+
+      &__picto {
+        margin-right : 5px;
+      }
+    }
+  }
   }
