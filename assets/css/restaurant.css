@@ -31,56 +31,56 @@ a {
 
 /***** Animations *****/
 /***** Entrees *****/
-.card_1 {
+.card__1 {
   animation: card_Apparition both ease-in-out;
   animation-duration: 2s;
   animation-delay: 100ms;
 }
-.card_reverse_2 {
+.card__2 {
   animation: card_Apparition both ease-in-out;
   animation-delay: 600ms;
   animation-duration: 2s;
 }
-.card_3 {
+.card__3 {
   animation: card_Apparition both ease-in-out;
   animation-delay: 1200ms;
   animation-duration: 2s;
 }
-.card_reverse_4 {
+.card__4 {
   animation: card_Apparition both ease-in-out;
   animation-delay: 1800ms;
   animation-duration: 2s;
 }
 
 /***** Plats *****/
-.card_4 {
+.card__4 {
   animation: card_Apparition both ease-in-out;
   animation-delay: 2100ms;
   animation-duration: 2s;
 }
-.card_reverse_5 {
+.card__5 {
   animation: card_Apparition both ease-in-out;
   animation-delay: 2600ms;
   animation-duration: 2s;
 }
-.card_6 {
+.card__6 {
   animation: card_Apparition both ease-in-out;
   animation-delay: 3200ms;
   animation-duration: 2s;
 }
 
 /***** Dessert *****/
-.card_7 {
+.card__7 {
   animation: card_Apparition both ease-in-out;
   animation-delay: 4100ms;
   animation-duration: 2s;
 }
-.card_reverse_8 {
+.card__8 {
   animation: card_Apparition both ease-in-out;
   animation-delay: 4600ms;
   animation-duration: 2s;
 }
-.card_9 {
+.card__9 {
   animation: card_Apparition both ease-in-out;
   animation-delay: 5200ms;
   animation-duration: 2s;
