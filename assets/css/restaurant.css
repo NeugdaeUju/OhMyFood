@@ -473,6 +473,7 @@ input[type=checkbox]:not(:checked) ~ .card__name {
     align-items: center;
     position: relative;
     top: -34px;
+    padding-top: 64px;
   }
   .footer__logo {
     height: 27px;
