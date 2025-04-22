@@ -56,8 +56,21 @@ input:checked + .restaurant__like__heart .restaurant__like__heart__shape {
   stroke: url(#heartGradient);
   animation: heartcolor 1s backwards;
 }
+input:not(:checked) + .restaurant__like__heart .restaurant__like__heart__shape {
+  fill: white;
+  stroke: black;
+  animation: heartwhite 1s backwards;
+}
 
 @keyframes heartcolor {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes heartwhite {
   0% {
     opacity: 0%;
   }

@@ -19,12 +19,25 @@
         stroke : url(#heartGradient);
         animation : heartcolor 1s backwards;
       }
+
+      input:not(:checked) + &__heart .restaurant__like__heart__shape {
+        fill : white;
+        stroke : black;
+        animation : heartwhite 1s backwards;
+      }
 }
 
 @keyframes heartcolor {
   0% {
     opacity : 0%;
   }
+  100% {
+    opacity : 100%;
+  }
+}
+
+@keyframes heartwhite {
+  0% {opacity : 0%;}
   100% {
     opacity : 100%;
   }
