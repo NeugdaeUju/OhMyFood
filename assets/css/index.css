@@ -39,45 +39,40 @@ a {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
 }
 
-.restaurant__like__wrapper {
-  cursor: pointer;
+/*Mise en page du coeur*/
+.restaurant__like {
+  position: relative;
+}
+.restaurant__like__switch {
   display: inline-block;
 }
-.restaurant__like__heart {
+.restaurant__like--empty {
   width: 29px;
   height: 80px;
+  transition: opacity 600ms ease;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  cursor: pointer;
 }
-.restaurant__like__heart__shape {
-  fill: white;
-  transition: all 600ms ease;
-}
-input:checked + .restaurant__like__heart .restaurant__like__heart__shape {
-  fill: url(#heartGradient);
-  stroke: url(#heartGradient);
-  animation: heartcolor 1s backwards;
-}
-input:not(:checked) + .restaurant__like__heart .restaurant__like__heart__shape {
-  fill: white;
-  stroke: black;
-  animation: heartwhite 1s backwards;
+.restaurant__like--full {
+  width: 29px;
+  height: 80px;
+  transition: opacity 600ms ease;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  cursor: pointer;
 }
 
-@keyframes heartcolor {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
+input:checked ~ .restaurant__like--full {
+  opacity: 1;
 }
-@keyframes heartwhite {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
+
+input:not(:checked) ~ .restaurant__like--full {
+  opacity: 0;
 }
+
 .loader {
   position: fixed;
   top: 0;

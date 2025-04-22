@@ -1,44 +1,33 @@
+/*Mise en page du coeur*/
 .restaurant__like {
-    &__wrapper {
-        cursor : pointer;
-        display : inline-block;
-    }
-
-    &__heart {
-        width : 29px;
-        height : 80px;
-
-        &__shape {
-            fill: white;
-            transition : all 600ms ease;
-          }
-    }
-
-    input:checked + &__heart .restaurant__like__heart__shape {
-        fill : url(#heartGradient);
-        stroke : url(#heartGradient);
-        animation : heartcolor 1s backwards;
-      }
-
-      input:not(:checked) + &__heart .restaurant__like__heart__shape {
-        fill : white;
-        stroke : black;
-        animation : heartwhite 1s backwards;
-      }
-}
-
-@keyframes heartcolor {
-  0% {
-    opacity : 0%;
+  position : relative;
+  &__switch{
+    display : inline-block;
   }
-  100% {
-    opacity : 100%;
+  &--empty {
+      width : 29px;
+      height : 80px;
+      transition : opacity 600ms ease;
+      position : absolute;
+      top : -30px;
+      left : -30px;
+      cursor: pointer;
+  }
+  &--full {
+      width : 29px;
+      height : 80px;
+      transition : opacity 600ms ease;
+      position : absolute;
+      top : -30px;
+      left : -30px;
+      cursor: pointer;
   }
 }
 
-@keyframes heartwhite {
-  0% {opacity : 0%;}
-  100% {
-    opacity : 100%;
-  }
+input:checked ~ .restaurant__like--full {
+  opacity: 1;
+}
+
+input:not(:checked) ~ .restaurant__like--full {
+  opacity: 0;
 }
