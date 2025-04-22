@@ -83,7 +83,6 @@ input:checked + .restaurant__like__heart .restaurant__like__heart__shape {
   position: absolute;
   border: 4px solid #9356DC;
   border-left-color: transparent;
-  border-bottom: 0;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -95,7 +94,6 @@ input:checked + .restaurant__like__heart .restaurant__like__heart__shape {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  border-right: 0;
   border-top-color: transparent;
   animation: spin-reverse 3s cubic-bezier(0.42, 0.61, 0.58, 0.41);
 }
@@ -105,7 +103,6 @@ input:checked + .restaurant__like__heart .restaurant__like__heart__shape {
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  border-right: 0;
   border-top-color: transparent;
   animation: spin 3s cubic-bezier(0.42, 0.61, 0.58, 0.41);
 }
