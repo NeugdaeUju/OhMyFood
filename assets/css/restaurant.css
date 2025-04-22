@@ -390,8 +390,8 @@ input[type=checkbox]:not(:checked) ~ .card__name {
   /*Menu*/
   .menu {
     top: -40px;
-    width: 70%;
-    padding: 0 50px;
+    width: 50%;
+    padding: 0 10%;
   }
   .menu__header {
     justify-content: center;
@@ -429,9 +429,6 @@ input[type=checkbox]:not(:checked) ~ .card__name {
 /***** Devices : Large screen *****/
 @media (min-width: 1440px) {
   /*Menu*/
-  .menu {
-    padding: 50px 190px 0px 190px;
-  }
   .menu__header {
     padding-bottom: 40px;
   }

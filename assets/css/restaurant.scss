@@ -281,8 +281,9 @@
     /*Menu*/
    .menu {
     top : -40px;
-    width: 70%;
-    padding : 0 50px;
+    width : 50%;
+    padding : 0 10%;
+
 
     &__header {
       justify-content: center;
@@ -331,8 +332,6 @@
 @media (min-width : 1440px) {
     /*Menu*/
   .menu {
-    padding : 50px 190px 0px 190px;
-
     &__header {
       padding-bottom : 40px;
     }
