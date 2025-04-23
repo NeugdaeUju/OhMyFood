@@ -453,6 +453,9 @@ input:not(:checked) ~ .restaurant__like--full {
   .restaurant__cards--direction__link {
     width: 47%;
   }
+  .restaurant__card__image {
+    height: 231px;
+  }
   /***** Footer *****/
   .footer {
     padding-top: 64px;
