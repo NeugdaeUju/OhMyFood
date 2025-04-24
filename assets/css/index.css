@@ -51,7 +51,7 @@ a {
   height: 80px;
   transition: opacity 600ms ease;
   position: absolute;
-  top: -30px;
+  top: -40px;
   left: -30px;
   cursor: pointer;
 }
@@ -60,16 +60,16 @@ a {
   height: 80px;
   transition: opacity 600ms ease;
   position: absolute;
-  top: -30px;
+  top: -40px;
   left: -30px;
   cursor: pointer;
 }
 
-input:checked ~ .restaurant__like--full {
+.restaurant__like:hover .restaurant__like--full {
   opacity: 1;
 }
 
-input:not(:checked) ~ .restaurant__like--full {
+.restaurant__like .restaurant__like--full {
   opacity: 0;
 }
 
@@ -144,7 +144,7 @@ input:not(:checked) ~ .restaurant__like--full {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    transform: scaleY(-9999px);
+    transform: scaleY(100%);
     z-index: -1;
     height: 0px;
   }

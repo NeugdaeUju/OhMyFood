@@ -9,7 +9,7 @@
       height : 80px;
       transition : opacity 600ms ease;
       position : absolute;
-      top : -30px;
+      top : -40px;
       left : -30px;
       cursor: pointer;
   }
@@ -18,16 +18,16 @@
       height : 80px;
       transition : opacity 600ms ease;
       position : absolute;
-      top : -30px;
+      top : -40px;
       left : -30px;
       cursor: pointer;
   }
 }
 
-input:checked ~ .restaurant__like--full {
+.restaurant__like:hover .restaurant__like--full {
   opacity: 1;
 }
 
-input:not(:checked) ~ .restaurant__like--full {
+.restaurant__like .restaurant__like--full {
   opacity: 0;
 }
