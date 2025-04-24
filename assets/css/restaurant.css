@@ -163,10 +163,16 @@ input:not(:checked) ~ .restaurant__like--full {
 }
 /* Réaliser un Media query pour les élements mobile et utiliser l'animation présente pour le media query de 800px*/
 .card {
-  position: relative;
-  z-index: 2;
-  overflow: hidden;
   transition: transform 300ms ease;
+  z-index: 1;
+  position: relative;
+}
+.card:hover .card__check {
+  transform: translateX(0);
+  opacity: 1;
+}
+.card:hover .card__name {
+  animation: reduction 600ms both;
 }
 
 .card__check {
@@ -184,7 +190,7 @@ input:not(:checked) ~ .restaurant__like--full {
   transform: translateX(100%);
   opacity: 0;
   transition: all 600ms ease;
-  z-index: 3;
+  z-index: 2;
 }
 
 .card__content__price {
@@ -193,15 +199,7 @@ input:not(:checked) ~ .restaurant__like--full {
   bottom: 20px;
 }
 
-input[type=checkbox]:checked ~ .card__check {
-  transform: translateX(0);
-  opacity: 1;
-}
-input[type=checkbox]:checked ~ .card__name {
-  animation: reduction 600ms both;
-}
-
-input[type=checkbox]:not(:checked) ~ .card__name {
+.card__name {
   animation: inverse 600ms both;
 }
 
@@ -219,40 +217,6 @@ input[type=checkbox]:not(:checked) ~ .card__name {
   }
   100% {
     width: 100%;
-  }
-}
-@media (min-width: 800px) {
-  .card__check {
-    position: absolute;
-    right: 0px;
-    width: 70px;
-    height: 70px;
-    background-color: #99E2D0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    transform: translateX(100%);
-    opacity: 0;
-    transition: all 300ms ease;
-    z-index: 3;
-  }
-  .card__content__price {
-    transform: translateX(0);
-    transition: transform 300ms ease;
-    z-index: 2;
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-  }
-  input[type=checkbox]:checked ~ .card__check {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  input[type=checkbox]:checked ~ .card__name .card__content .card__content__price {
-    transform: translateX(-70px);
   }
 }
 .order__button {
