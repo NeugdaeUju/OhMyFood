@@ -167,7 +167,6 @@ input:not(:checked) ~ .restaurant__like--full {
 }
 .card:active .card__check {
   opacity: 1;
-  transform: width;
   width: 59px;
   transition: all 600ms ease;
 }
@@ -217,18 +216,16 @@ input:not(:checked) ~ .restaurant__like--full {
 }
 @media (min-width: 1020px) {
   .card:active .card__check {
-    transform: 0;
+    transform: none;
     opacity: 1;
-    transform: 0;
     width: 0;
-    transition: 0;
+    transition: none;
   }
   .card:active .card__name {
     animation: none;
   }
   .card:hover .card__check {
     opacity: 1;
-    transform: width;
     width: 59px;
     transition: all 600ms ease;
   }
@@ -239,7 +236,6 @@ input:not(:checked) ~ .restaurant__like--full {
 @media (min-width: 1440px) {
   .card:hover .card__check {
     opacity: 1;
-    transform: width;
     width: 59px;
     transition: all 600ms ease;
   }

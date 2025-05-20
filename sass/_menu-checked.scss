@@ -5,7 +5,6 @@ position : relative;
 
 &:active .card__check {
     opacity : 1;
-    transform: width;
     width: 59px;
     transition: all 600ms ease;
 }
@@ -52,11 +51,10 @@ position : relative;
 @media (min-width : 1020px) {
   .card {
 &:active .card__check {
-    transform: 0;
+    transform: none;
     opacity : 1;
-    transform: 0;
     width: 0;
-    transition: 0;
+    transition: none;
 }
 
 &:active .card__name {
@@ -65,7 +63,6 @@ position : relative;
 
 &:hover .card__check {
     opacity : 1;
-    transform: width;
     width: 59px;
     transition: all 600ms ease;
 }
@@ -82,7 +79,6 @@ position : relative;
 
 &:hover .card__check {
     opacity : 1;
-    transform: width;
     width: 59px;
     transition: all 600ms ease;
 }
