@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /***** Variables *****/
 /***** Colors *****/
 /***** Fonts *****/
@@ -161,24 +160,26 @@ input:not(:checked) ~ .restaurant__like--full {
     opacity: 100%;
   }
 }
-/* Réaliser un Media query pour les élements mobile et utiliser l'animation présente pour le media query de 800px*/
+/**/
 .card {
   transition: transform 300ms ease;
-  z-index: 1;
   position: relative;
 }
-.card:hover .card__check {
+.card:active .card__check {
   transform: translateX(0);
   opacity: 1;
+  transform: width;
+  width: 59px;
+  transition: all 600ms ease;
 }
-.card:hover .card__name {
-  animation: reduction 600ms both;
+.card:active .card__name {
+  animation: price-reduction 600ms both;
 }
 
 .card__check {
   position: absolute;
   right: 0px;
-  width: 50px;
+  width: 0;
   height: 70px;
   background-color: #99E2D0;
   display: flex;
@@ -187,33 +188,29 @@ input:not(:checked) ~ .restaurant__like--full {
   justify-content: center;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  transform: translateX(100%);
   opacity: 0;
-  transition: all 600ms ease;
-  z-index: 2;
 }
 
 .card__content__price {
-  z-index: 2;
   right: 20px;
   bottom: 20px;
 }
 
 .card__name {
-  animation: inverse 600ms both;
+  animation: price-inverse 600ms both;
 }
 
-@keyframes reduction {
+@keyframes price-reduction {
   0% {
     width: 100%;
   }
   100% {
-    width: 75%;
+    width: 80%;
   }
 }
-@keyframes inverse {
+@keyframes priceinverse {
   0% {
-    width: 75%;
+    width: 90%;
   }
   100% {
     width: 100%;
