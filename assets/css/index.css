@@ -34,11 +34,20 @@ a {
   transition: all 600ms;
   cursor: pointer;
 }
-.hero__btn:hover {
+.hero__btn:active {
   filter: brightness(1.1);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
 }
 
+@media (min-width: 1020px) {
+  .hero__btn:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+  }
+  .hero__btn:active {
+    filter: none;
+  }
+}
 /*Mise en page du coeur*/
 .restaurant__like {
   position: relative;
