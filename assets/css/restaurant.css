@@ -266,11 +266,24 @@ input:not(:checked) ~ .restaurant__like--full {
   transition: all 600ms;
   cursor: pointer;
 }
-.order__button:hover {
+.order__button:active {
   filter: brightness(1.1);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
 }
 
+@media (min-width: 1020px) {
+  .order__button {
+    transition: all 600ms;
+    cursor: pointer;
+  }
+  .order__button:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+  }
+  .order__button:active {
+    filter: none;
+  }
+}
 /***** Header *****/
 .header {
   display: flex;
