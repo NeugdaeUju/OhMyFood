@@ -24,10 +24,21 @@
   }
 }
 
-.restaurant__like:hover .restaurant__like--full {
+.restaurant__like:active .restaurant__like--full {
   opacity: 1;
 }
 
 .restaurant__like .restaurant__like--full {
   opacity: 0;
+}
+
+@media (min-width : 1020px){
+  .restaurant__like:active .restaurant__like--full {
+    opacity: 0;
+  }
+
+  .restaurant__like:hover .restaurant__like--full {
+  opacity: 1;
+}
+
 }
